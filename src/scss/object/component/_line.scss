@@ -1,0 +1,13 @@
+.c-line {
+    &__aboutline {
+        width: 20vw;
+        position: absolute;
+        top: -120px;
+        bottom: auto;
+        left: 0%;
+        right: auto;
+        max-width: 100%;
+        vertical-align: middle;
+        display: inline-block;
+    }
+}

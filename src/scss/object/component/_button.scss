@@ -1,0 +1,27 @@
+.c-button {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+
+    &__link {
+        background-color: #0d94a9;
+        color: var(--white);
+        border-radius: 25px;
+        justify-content: center;
+        align-items: center;
+        width: 240px;
+        margin-top: 42px;
+        padding: 12px 24px;
+        font-weight: 700;
+        display: flex;
+
+        img {
+            width: 30px;
+            max-width: 100%;
+            vertical-align: middle;
+            display: inline-block;
+        }
+    }
+}

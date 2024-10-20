@@ -1,0 +1,33 @@
+.c-text {
+    &__news__date {
+        color: #969696;
+        margin-bottom: 6px;
+        font-size: 12px;
+    }
+
+    &__news__text {
+        font-size: 16px;
+        line-height: 1.7;
+        color: #333;
+    }
+
+    &__button {
+        color: white;
+        margin-right: 15px;
+        font-weight: 700;
+    }
+
+    &__about__top {
+        margin-bottom: 30px;
+        font-size: 17px;
+        line-height: 1.5;
+        color: #333;
+    }
+
+    &__about__bottom {
+        margin-bottom: 30px;
+        font-size: 17px;
+        line-height: 1.5;
+        color: #333;
+    }
+}

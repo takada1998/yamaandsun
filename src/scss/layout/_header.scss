@@ -1,0 +1,45 @@
+.l-header {
+    &__inner {
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 50px 30px 60px;
+        display: flex;
+        position: fixed;
+        top: 0%;
+        bottom: auto;
+        left: 0%;
+        right: 0%;
+        flex-wrap: wrap;
+    }
+
+    &__logo {
+        width: 120px;
+
+        img {
+            max-width: 100%;
+            vertical-align: middle;
+            display: inline-block;
+
+
+        }
+    }
+
+    &__hbgbackground {
+        background-color: #fff36c;
+        border-bottom-left-radius: 100%;
+        width: 19vw;
+        max-width: 100vw;
+        height: 19vw;
+        max-height: 100vh;
+        position: absolute;
+        top: 0%;
+        bottom: auto;
+        left: auto;
+        right: 0%;
+
+        @media screen and (min-width: 1440px) {
+            width: 250px;
+            height: 250px;
+        }
+    }
+}
