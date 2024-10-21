@@ -25,7 +25,7 @@
     <meta name="twitter:image" content="" /><!--絶対パスで記述-->
 
     <title>YAMAANDSUN</title>
-<link href="assets/stylesheets/bundle4c4c01c3edbbdf3ae3fc.css" rel="stylesheet"></head>
+<link href="assets/stylesheets/bundled6f0a49087392112a8fa.css" rel="stylesheet"></head>
 
 <body>
     <div class="l-wrap">
@@ -99,7 +99,67 @@
         </div>
         <img src="assets/images/deco_line_2.png" alt="line" class="c-line__aboutline">
     </div>
+    <div class="l-main__music">
+        <h2 class="c-title__music">MUSIC</h2>
+        <div class="l-main__music__image">
+            <script>
+                let images = [
+                    { src: 'assets/images/music1.jpeg', name: 'Image 1' },
+                    { src: 'assets/images/music2.jpeg', name: 'Image 2' },
+                    { src: 'assets/images/music3.jpeg', name: 'Image 3' },
+                    { src: 'assets/images/music4.jpeg', name: 'Image 4' },
+                    { src: 'assets/images/music5.jpeg', name: 'Image 5' },
+                    { src: 'assets/images/music6.jpeg', name: 'Image 6' },
+                    { src: 'assets/images/music7.jpeg', name: 'Image 7' },
+                    { src: 'assets/images/music8.jpeg', name: 'Image 8' },
+                    { src: 'assets/images/music9.jpeg', name: 'Image 9' },
+                    { src: 'assets/images/music10.jpeg', name: 'Image 10' },
+                    { src: 'assets/images/music11.jpeg', name: 'Image 11' },
+                    { src: 'assets/images/music12.jpeg', name: 'Image 12' },
+                ];
+
+                let gridContainer = document.querySelector('.l-main__music__image');
+
+                images.forEach(image => {
+                    let itemDiv = document.createElement('div');
+                    itemDiv.classList.add('l-main__musicimageitem');
+
+                    let imgElement = document.createElement('img');
+                    imgElement.src = image.src;
+                    imgElement.alt = image.name;
+
+                    let caption = document.createElement('p');
+                    caption.textContent = image.name;
+
+                    itemDiv.appendChild(imgElement);
+                    itemDiv.appendChild(caption);
+                    gridContainer.appendChild(itemDiv);
+                });
+            </script>
+        </div>
+        <div class="c-button">
+            <a href="#" class="c-button__link">
+                <div class="c-text__button">MUSICページへ</div>
+                <img src="assets/images/button_right_arrow.png" alt="矢印">
+            </a>
+        </div>
+    </div>
+    <div class="l-main__camp">
+        <div class="l-main__camp__wrap">
+            <div class="l-main__camp__text">
+                <p class="c-text__camp__top">豊かな自然に包まれた快適な空間。<br>家族構成やライフスタイルにあわせて<br>選べる8つのキャンプサイト‼</p>
+                <div class="c-button">
+                    <a href="#" class="c-button__link">
+                        <div class="c-text__button">MUSICページへ</div>
+                        <img src="assets/images/button_right_arrow.png" alt="矢印">
+                    </a>
+                </div>
+            </div>
+            <img src="assets/images/camp.jpeg" alt="camp" class="c-image__capm">
+        </div>
+        <h2 class="c-title__camp">CAMP</h2>
+    </div>
 </main>
                 </div><!-- l-wrap -->
-<script type="text/javascript" src="assets/javascripts/bundle4c4c01c3edbbdf3ae3fc.js"></script></body>
+<script type="text/javascript" src="assets/javascripts/bundled6f0a49087392112a8fa.js"></script></body>
 </html>

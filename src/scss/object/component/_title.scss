@@ -20,4 +20,43 @@
 		color: #333;
 
 	}
+
+	&__music {
+		text-align: center;
+		font-weight: 500;
+		color: rgba(51, 51, 51, 0);
+		z-index: 1;
+		font-size: 200px;
+		position: absolute;
+		top: 1450px;
+		-webkit-text-stroke-width: 2px;
+		-webkit-text-stroke-color: #0d94a9;
+		margin-bottom: 42px;
+		font-family: sans-serif;
+		margin-top: 0;
+		line-height: 1;
+
+		@media screen and (min-width: 1440px) {
+			left: 9%;
+		}
+	}
+
+	&__camp {
+		@media screen and (min-width: 1440px) {
+			left: 6%;
+		}
+
+		z-index: 1;
+		font-size: 200px;
+		position: absolute;
+		top: -120px;
+		bottom: auto;
+		right: auto;
+		color: rgba(51, 51, 51, 0);
+		-webkit-text-stroke-width: 2px;
+		-webkit-text-stroke-color: #0d94a9;
+		margin-bottom: 42px;
+		font-family:sans-serif;
+		font-weight: 500;
+	}
 }
