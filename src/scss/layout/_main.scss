@@ -107,4 +107,24 @@
         }
     }
 
+    &__movie {
+        margin-top: 360px;
+        z-index: 1;
+        padding-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
+        position: relative;
+
+        &__wrap {
+            grid-column-gap: 60px;
+            grid-row-gap: 60px;
+            grid-template-rows: auto;
+            grid-template-columns: 1fr 1fr;
+            grid-auto-columns: 1fr;
+            max-width: 1050px;
+            margin: 120px auto;
+            display: grid;
+        }
+    }
+
 }
