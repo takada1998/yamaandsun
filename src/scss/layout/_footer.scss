@@ -1,3 +1,36 @@
-.footer {
-	color: #fff;
+.l-footer {
+	margin-top: 240px;
+	display: block;
+	position: relative;
+
+	&__wrap {
+		background-color: #fff36c;
+		padding: 47px 60px 35px;
+		display: grid;
+		position: relative;
+
+		@media screen and (min-width: 1440px) {
+			max-width: 1500px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		@media screen and (min-width: 1280px) {
+			grid-column-gap: 60px;
+			grid-row-gap: 0px;
+			grid-template-rows: auto;
+			grid-template-columns: 1fr .25fr;
+			margin-top: 0;
+		}
+	}
+
+	&__inner {
+		grid-area: span 1 / span 1 / span 1 / span 1;
+	}
+
+	&__SNS {
+		justify-content: flex-end;
+		min-width: 270px;
+		padding-bottom: 10px;
+	}
 }

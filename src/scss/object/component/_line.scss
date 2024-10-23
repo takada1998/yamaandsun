@@ -10,4 +10,26 @@
         vertical-align: middle;
         display: inline-block;
     }
+
+    &__musicline {
+        width: 20vw;
+        position: absolute;
+        top: 1400px;
+        bottom: auto;
+        left: auto;
+        right: 0%;
+        max-width: 100%;
+        vertical-align: middle;
+        display: inline-block;
+    }
+
+    &__footerline {
+        height: 257px;
+        position: absolute;
+        top: -257px;
+        bottom: auto;
+        left: 0%;
+        right: auto;
+        width: 15%;
+    }
 }
