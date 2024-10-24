@@ -9,6 +9,10 @@
         font-size: 16px;
         line-height: 1.7;
         color: #333;
+
+        @media screen and (max-width: 767px) {
+            font-size: 14px;
+        }
     }
 
     &__button {
@@ -22,6 +26,16 @@
         font-size: 17px;
         line-height: 1.5;
         color: #333;
+
+        @media screen and (max-width: 479px) {
+            line-height: 1.8;
+        }
+
+
+        @media screen and (max-width: 767px) {
+            margin-bottom: 24px;
+            font-size: 16px;
+        }
     }
 
     &__about__bottom {
@@ -29,6 +43,16 @@
         font-size: 17px;
         line-height: 1.5;
         color: #333;
+
+        @media screen and (max-width: 479px) {
+            line-height: 1.8;
+        }
+
+        @media screen and (max-width: 767px) {
+
+            margin-bottom: 24px;
+            font-size: 16px;
+        }
     }
 
     &__camp__top {
@@ -36,5 +60,9 @@
         font-size: 18px;
         line-height: 2;
         margin-top: 0;
+    }
+
+    &__copyright {
+        font-size: 14px;
     }
 }

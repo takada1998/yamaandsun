@@ -1,4 +1,5 @@
 .l-footer {
+	width: 100%;
 	margin-top: 240px;
 	display: block;
 	position: relative;
@@ -29,8 +30,52 @@
 	}
 
 	&__SNS {
-		justify-content: flex-end;
-		min-width: 270px;
-		padding-bottom: 10px;
+		flex-direction: column;
+		display: flex;
+
+		@media screen and (min-width: 1280px) {
+			justify-content: flex-end;
+			min-width: 270px;
+			padding-bottom: 10px;
+		}
+
+	}
+
+	&__nav {
+		margin-left: -9px;
+		display: flex;
+
+		a {
+			font-size: 16px;
+			text-transform: uppercase;
+			padding: 9px;
+			font-weight: 500;
+			display: block;
+		}
+
+		@media screen and (min-width: 1280px) {
+			flex-wrap: wrap;
+		}
+	}
+
+	&__SNS__icon {
+		margin-bottom: 15px;
+		margin-left: -15px;
+		display: flex;
+
+		a {
+			margin-left: 0;
+			padding: 15px;
+		}
+
+		img {
+			width: 100%;
+			vertical-align: middle;
+		}
+	}
+
+	&__title {
+		margin-bottom: 30px;
+		width: 300px;
 	}
 }
