@@ -35,6 +35,20 @@
         max-width: 100%;
         vertical-align: middle;
         display: inline-block;
+
+        @media screen and (max-width: 991px) {
+            width: 27vw;
+        }
+
+        @media screen and (max-width: 479px) {
+            width: 55vw;
+            top: -10px;
+        }
+
+        @media screen and (max-width: 767px) {
+            width: 30vw;
+            top: 1200px;
+        }
     }
 
     &__footerline {
@@ -45,5 +59,18 @@
         left: 0%;
         right: auto;
         width: 15%;
+
+        @media screen and (max-width: 767px) {
+            height: 160px;
+            top: -160px;
+            width: 30%;
+
+        }
+
+        @media screen and (max-width: 991px) {
+            height: 200px;
+            top: -200px;
+            width: 27%;
+        }
     }
 }
