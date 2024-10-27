@@ -32,12 +32,14 @@
 @use 'object/component/_line';
 @use 'object/component/_image';
 @use 'object/component/_sns';
+@use 'object/component/_video';
 
 /*// -----------------------------------------------------------------
 // Project
 // -----------------------------------------------------------------*/
 
 @use 'object/project/_movie';
+@use 'object/project/_sponsors';
 
 /*// -----------------------------------------------------------------
 // Utility
