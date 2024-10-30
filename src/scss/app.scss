@@ -33,6 +33,7 @@
 @use 'object/component/_image';
 @use 'object/component/_sns';
 @use 'object/component/_video';
+@use 'object/component/_menu';
 
 /*// -----------------------------------------------------------------
 // Project
@@ -41,6 +42,7 @@
 @use 'object/project/_movie';
 @use 'object/project/_sponsors';
 @use 'object/project/_picup';
+@use 'object/project/_hbgmenu';
 
 /*// -----------------------------------------------------------------
 // Utility

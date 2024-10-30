@@ -1,0 +1,36 @@
+.c-menu {
+    &__link {
+        grid-area: span 1 / span 1 / span 1 / span 1;
+        padding: 15px 10px;
+        font-family: itc-avant-garde-gothic-pro, sans-serif;
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 1;
+        display: block;
+    }
+
+    &__text {
+        border-bottom: 1px solid #333;
+        padding-bottom: 3px;
+        display: inline-block;
+        border-color: rgba(255, 255, 255, 0);
+    }
+
+    &__sns {
+        grid-area: 5 / 3 / 5 / 4;
+        align-self: center;
+        //justify-self: end;
+        justify-content: flex-start;
+        align-items: center;
+        display: flex;
+
+        a {
+            padding: 8px;
+        }
+
+        img {
+            width: 30px;
+            height: 30px;
+        }
+    }
+}
