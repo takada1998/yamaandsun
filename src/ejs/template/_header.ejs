@@ -70,24 +70,46 @@
     </div>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
+            const header = document.querySelector(".l-header__inner");
+            let lastScrollTop = 0;
+
+            window.addEventListener("scroll", function () {
+                let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                if (scrollTop > lastScrollTop) {
+                    header.style.top = "-200px"; // 下にスクロールしている場合、ヘッダーを隠す
+                } else {
+                    header.style.top = "0"; // 上にスクロールしている場合、ヘッダーを表示する
+                }
+                lastScrollTop = scrollTop;
+            });
+
             const hamburgerIcon = document.querySelector(".c-icon__hbg");
             const closeIcon = document.querySelector(".c-icon__hbgclose");
             const menuWrap = document.querySelector(".p-hbgmenu__menuwrap");
+            const hbgBackground = document.querySelector(".l-header__hbgbackground");
+            const body = document.body;
 
+            // ハンバーガーアイコンのクリックイベント
             hamburgerIcon.addEventListener("click", function () {
-                menuWrap.classList.add("is-open"); // メニューを表示
-                hamburgerIcon.style.display = "none"; // ハンバーガーアイコンを非表示
-                closeIcon.style.display = "block"; // クローズアイコンを表示
+                menuWrap.classList.add("is-open");
+                hbgBackground.classList.add("is-open");
+                hamburgerIcon.style.display = "none";
+                closeIcon.style.display = "block";
+                body.style.overflow = 'hidden'; // スクロールを無効化
             });
 
+            // クローズアイコンのクリックイベント
             closeIcon.addEventListener("click", function () {
-                menuWrap.classList.remove("is-open"); // メニューを非表示
-                hamburgerIcon.style.display = "block"; // ハンバーガーアイコンを表示
-                closeIcon.style.display = "none"; // クローズアイコンを非表示
+                menuWrap.classList.remove("is-open");
+                hbgBackground.classList.remove("is-open");
+                hamburgerIcon.style.display = "block";
+                closeIcon.style.display = "none";
+                body.style.overflow = ''; // スクロールを復活
             });
-
-            closeIcon.style.display = "none"; // クローズアイコンを非表示
-            menuWrap.classList.remove("is-open"); // メニューを非表示
+            closeIcon.style.display = "none";
+            menuWrap.classList.remove("is-open");
+            hbgBackground.classList.remove("is-open");
         });
+
     </script>
 </header>

@@ -1,4 +1,26 @@
 .c-line {
+    &__mainline {
+        width: 27vw;
+        position: absolute;
+        top: auto;
+        bottom: 11%;
+        left: auto;
+        right: 0%;
+
+        max-width: 100%;
+        vertical-align: middle;
+        display: inline-block;
+
+        @media screen and (max-width: 479px) {
+            width: 55vw;
+            bottom: 4%;
+        }
+
+        @media screen and (max-width: 767px) {
+            width: 30vw;
+        }
+    }
+
     &__aboutline {
         width: 20vw;
         position: absolute;
