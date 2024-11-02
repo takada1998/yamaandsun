@@ -3,10 +3,11 @@
 	margin-top: 240px;
 	display: block;
 	position: relative;
+	background-color: #fff36c;
+	padding: 47px 60px 35px;
+
 
 	&__wrap {
-		background-color: #fff36c;
-		padding: 47px 60px 35px;
 		display: grid;
 		position: relative;
 
@@ -95,7 +96,7 @@
 		}
 
 		img {
-			width: 100%;
+			width: 24px;
 			vertical-align: middle;
 			transition: opacity 0.3s ease, transform 0.3s ease;
 		}

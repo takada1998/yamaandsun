@@ -1,8 +1,8 @@
 .p-hbgmenu {
     &__menuwrap {
         display: block;
-        height: 100vh;
-        position: fixed;
+        height: 100%;
+        //position: fixed;
         top: 0%;
         bottom: 0%;
         left: 0%;
@@ -10,11 +10,17 @@
         overflow: scroll;
         background-color: #fff36c;
         display: none;
-        z-index: 9;
+        z-index: 10;
         opacity: 0;
+
+        background: transparent;
+        /* 背景は透明 */
+        opacity: 0;
+        transition: opacity 0.3s ease;
 
         @media screen and (max-width: 767px) {
             display: grid;
+            font-size: 22px;
         }
     }
 
@@ -53,4 +59,8 @@
 .p-hbgmenu__menuwrap.is-open {
     display: block;
     opacity: 1;
+}
+
+.p-hbgmenu__menuwrap {
+    display: none;
 }

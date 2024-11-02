@@ -307,8 +307,15 @@
         padding-right: 0;
         position: relative;
 
+
         &__wrap {
             align-items: center;
+            max-width: 1050px;
+
+            flex-direction: column;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
 
             @media screen and (min-width: 1280px) {
                 flex-direction: column;

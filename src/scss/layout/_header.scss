@@ -1,5 +1,5 @@
 .l-header {
-
+    z-index: 10;
 
     &__inner {
         justify-content: space-between;
@@ -29,6 +29,7 @@
 
     &__logo {
         width: 120px;
+        z-index: 10;
 
         @media screen and (max-width: 991px) {
             width: 80px;
@@ -59,6 +60,10 @@
         left: auto;
         right: 0%;
 
+
+        transform: scale(1);
+        transition: transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+
         @media screen and (min-width: 1440px) {
             width: 250px;
             height: 250px;
@@ -79,4 +84,9 @@
             height: 150px;
         }
     }
+}
+
+.l-header__hbgbackground.is-open {
+    transform: scale(70);
+    /* 開いたときにページ全体を覆うように拡大 */
 }

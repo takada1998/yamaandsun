@@ -35,13 +35,23 @@
     }
 
     &__hbgclose {
-        z-index: 1;
+        z-index: 1000;
         cursor: pointer;
         width: 4vw;
         height: 4vw;
         padding: 12px;
         display: none;
         position: relative;
+
+        @media screen and (max-width: 767px) {
+            width: 52px;
+            height: 52px;
+        }
+
+        @media screen and (max-width: 991px) {
+            width: 50px;
+            height: 50px;
+        }
 
         img {
             max-width: 100%;

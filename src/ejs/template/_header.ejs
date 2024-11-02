@@ -76,7 +76,7 @@
             window.addEventListener("scroll", function () {
                 let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
                 if (scrollTop > lastScrollTop) {
-                    header.style.top = "-200px"; // 下にスクロールしている場合、ヘッダーを隠す
+                    header.style.top = "-250px"; // 下にスクロールしている場合、ヘッダーを隠す
                 } else {
                     header.style.top = "0"; // 上にスクロールしている場合、ヘッダーを表示する
                 }
@@ -88,6 +88,11 @@
             const menuWrap = document.querySelector(".p-hbgmenu__menuwrap");
             const hbgBackground = document.querySelector(".l-header__hbgbackground");
             const body = document.body;
+
+            // 初期状態
+            closeIcon.style.display = "none";
+            menuWrap.classList.remove("is-open");
+            hbgBackground.classList.remove("is-open");
 
             // ハンバーガーアイコンのクリックイベント
             hamburgerIcon.addEventListener("click", function () {
@@ -106,10 +111,6 @@
                 closeIcon.style.display = "none";
                 body.style.overflow = ''; // スクロールを復活
             });
-            closeIcon.style.display = "none";
-            menuWrap.classList.remove("is-open");
-            hbgBackground.classList.remove("is-open");
         });
-
     </script>
 </header>
