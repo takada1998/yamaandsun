@@ -340,3 +340,13 @@
         }
     }
 }
+
+.l-main__music__image img {
+    transition: opacity 0.3s ease;
+    /* 透明度の変化をスムーズに */
+}
+
+.l-main__music__image img:hover {
+    opacity: 0.8;
+    /* ホバー時に少し薄くなる */
+}

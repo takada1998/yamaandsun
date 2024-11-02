@@ -64,18 +64,18 @@
         <div class="l-main__music__image">
             <script>
                 let images = [
-                    { src: 'assets/images/music1.jpeg', name: 'Image 1' },
-                    { src: 'assets/images/music2.jpeg', name: 'Image 2' },
-                    { src: 'assets/images/music3.jpeg', name: 'Image 3' },
-                    { src: 'assets/images/music4.jpeg', name: 'Image 4' },
-                    { src: 'assets/images/music5.jpeg', name: 'Image 5' },
-                    { src: 'assets/images/music6.jpeg', name: 'Image 6' },
-                    { src: 'assets/images/music7.jpeg', name: 'Image 7' },
-                    { src: 'assets/images/music8.jpeg', name: 'Image 8' },
-                    { src: 'assets/images/music9.jpeg', name: 'Image 9' },
-                    { src: 'assets/images/music10.jpeg', name: 'Image 10' },
-                    { src: 'assets/images/music11.jpeg', name: 'Image 11' },
-                    { src: 'assets/images/music12.jpeg', name: 'Image 12' },
+                    { src: 'assets/images/music1.jpeg', name: 'artist 1' },
+                    { src: 'assets/images/music2.jpeg', name: 'artist 2' },
+                    { src: 'assets/images/music3.jpeg', name: 'artist 3' },
+                    { src: 'assets/images/music4.jpeg', name: 'artist 4' },
+                    { src: 'assets/images/music5.jpeg', name: 'artist 5' },
+                    { src: 'assets/images/music6.jpeg', name: 'artist 6' },
+                    { src: 'assets/images/music7.jpeg', name: 'artist 7' },
+                    { src: 'assets/images/music8.jpeg', name: 'artist 8' },
+                    { src: 'assets/images/music9.jpeg', name: 'artist 9' },
+                    { src: 'assets/images/music10.jpeg', name: 'artist 10' },
+                    { src: 'assets/images/music11.jpeg', name: 'artist 11' },
+                    { src: 'assets/images/music12.jpeg', name: 'artist 12' },
                 ];
 
                 let gridContainer = document.querySelector('.l-main__music__image');
@@ -176,4 +176,46 @@
             </div>
         </div>
     </div>
+    <a href="#" class="c-button__pagetop">
+        <img src="assets/images/go_top_arrow.png" class="c-button__pagetop__arrow" alt="矢印">
+        <div class="c-button__pagetop__text">GO TOP</div>
+    </a>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const pageTopButton = document.querySelector(".c-button__pagetop");
+            const newsSection = document.querySelector(".l-main__news");
+
+            pageTopButton.addEventListener("click", function (event) {
+                event.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+            });
+
+            // Intersection Observerの設定
+            const observer = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            // l-main__newsが見え始めたらページトップボタンを表示
+                            pageTopButton.style.display = "grid";
+                        }
+                    });
+                },
+                { threshold: 0.1 } // 10%見えたら発火
+            );
+
+            // 観察の開始
+            observer.observe(newsSection);
+            // スクロールイベントでページトップに戻ったらボタンを非表示にする
+            window.addEventListener("scroll", function () {
+                if (window.scrollY === 0) {
+                    pageTopButton.style.display = "none";
+                }
+            });
+            // ページトップボタンの初期非表示設定
+            pageTopButton.style.display = "none";
+        });
+    </script>
 </main>

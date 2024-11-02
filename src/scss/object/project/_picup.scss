@@ -17,6 +17,7 @@
     bottom: -4%;
     left: 60px;
     right: auto;
+    transition: transform 0.3s ease;
 
     @media screen and (max-width: 479px) {
         width: 160px;
@@ -64,4 +65,8 @@
             font-size: 17px;
         }
     }
+}
+
+.p-picup:hover {
+    transform: scale(1.1);
 }
