@@ -17,7 +17,7 @@
         /* 背景は透明 */
         opacity: 0;
         transition: opacity 0.3s ease;
-
+        overflow-y: auto;
         pointer-events: none;
 
         @media screen and (max-width: 767px) {
