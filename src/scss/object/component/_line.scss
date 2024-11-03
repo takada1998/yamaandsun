@@ -64,36 +64,70 @@
 
         @media screen and (max-width: 767px) {
             width: 30vw;
-            top: 190px;
+            top: -190px;
         }
 
         @media screen and (max-width: 479px) {
             width: 55vw;
-            top: -190px;
+            top: -10px;
         }
     }
 
-    &__footerline {
-        height: 257px;
+    &__movieline {
+        width: 20vw;
         position: absolute;
-        top: -257px;
+        top: -240px;
         bottom: auto;
         left: 0%;
         right: auto;
-        width: 15%;
+
+        max-width: 100%;
+        vertical-align: middle;
+        display: inline-block;
+
+        @media screen and (max-width: 991px) {
+            width: 27vw;
+        }
+
 
         @media screen and (max-width: 767px) {
-            height: 160px;
-            top: -160px;
+            width: 35vw;
+            top: -200px;
+        }
+
+        @media screen and (max-width: 479px) {
+            width: 52vw;
+            top: -20px;
+        }
+
+
+    }
+
+    &__footerline {
+        height: 170px;
+        position: absolute;
+        top: -150px;
+        bottom: auto;
+        left: 0%;
+        right: auto;
+
+        width: 20%;
+        vertical-align: middle;
+        display: inline-block;
+
+        @media screen and (max-width: 991px) {
+            height: 150px;
+            top: -140px;
+            width: 25%;
+        }
+
+        @media screen and (max-width: 767px) {
+            height: 140px;
+            top: -140px;
             width: 30%;
 
         }
 
-        @media screen and (max-width: 991px) {
-            height: 200px;
-            top: -200px;
-            width: 27%;
-        }
     }
 
     &__sponsorsline {

@@ -35,13 +35,14 @@
     }
 
     &__hbgclose {
-        z-index: 1000;
+        z-index: 1001;
         cursor: pointer;
         width: 4vw;
         height: 4vw;
         padding: 12px;
         display: none;
         position: relative;
+        pointer-events: auto;
 
         @media screen and (max-width: 767px) {
             width: 52px;

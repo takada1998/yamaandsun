@@ -29,13 +29,14 @@
 		font-size: 42px;
 		color: #333;
 
+		@media screen and (max-width: 767px) {
+			margin-bottom: 24px;
+		}
+
 		@media screen and (max-width: 479px) {
 			font-size: 30px;
 		}
 
-		@media screen and (max-width: 767px) {
-			margin-bottom: 24px;
-		}
 
 	}
 
@@ -53,28 +54,16 @@
 		margin-top: 0;
 		line-height: 1;
 		left: 3%;
-		//top: -150px;
+		top: -150px;
 
 		@media screen and (min-width: 1920px) {
 			left: 19%;
 		}
 
-		@media screen and (min-width: 1440px) {
-			left: 9%;
-		}
-
-		@media screen and (min-width: 1280px) {
-			left: 3%;
-		}
-
 		@media screen and (max-width: 991px) {
 			font-size: 160px;
-			//top: 1550px;
+			top: -110px;
 			left: 0%;
-		}
-
-		@media screen and (max-width: 479px) {
-			top: 120px;
 		}
 
 		@media screen and (max-width: 767px) {
@@ -82,33 +71,31 @@
 			top: 1400px;
 		}
 
-
-
-
+		@media screen and (max-width: 479px) {
+			top: 120px;
+			-webkit-text-stroke-width: 1px;
+		}
 	}
 
 	&__camp {
-		@media screen and (min-width: 1440px) {
-			left: 6%;
+		@media screen and (min-width: 1920px) {
+			left: 17%;
 		}
 
-		@media screen and (max-width: 479px) {
-			top: 70px;
-			-webkit-text-stroke-width: 1px;
-			font-weight: 500;
+		@media screen and (max-width: 991px) {
+			font-size: 160px;
+			top: -100px;
 		}
 
 		@media screen and (max-width: 767px) {
 			font-size: 86px;
 			top: -60px;
-			margin-bottom: 30px;
 		}
 
-		@media screen and (max-width: 991px) {
-			//font-size: 160px;
-			//top: -100px;
+		@media screen and (max-width: 479px) {
+			top: -80px;
+			-webkit-text-stroke-width: 1px;
 		}
-
 
 		z-index: 1;
 		font-size: 200px;
@@ -125,9 +112,14 @@
 	}
 
 	&__movie {
+		@media screen and (min-width: 1920px) {
+			right: 22%;
+		}
 
-		@media screen and (max-width: 479px) {
-			top: 116px;
+		@media screen and (max-width: 991px) {
+			font-size: 160px;
+			top: -120px;
+			left: 0%;
 		}
 
 		@media screen and (max-width: 767px) {
@@ -135,10 +127,9 @@
 			top: -60px;
 		}
 
-		@media screen and (max-width: 991px) {
-			//font-size: 160px;
-			top: -120px;
-			//right: 0%;
+		@media screen and (max-width: 479px) {
+			top: 100px;
+			-webkit-text-stroke-width: 1px;
 		}
 
 		right: 6%;

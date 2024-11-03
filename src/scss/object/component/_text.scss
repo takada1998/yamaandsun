@@ -70,4 +70,15 @@
     &__copyright {
         font-size: 14px;
     }
+
+    &__scroll {
+        transform-origin: 0%;
+        margin-top: 12px;
+        margin-left: 6px;
+        font-size: 16px;
+        font-weight: 300;
+        display: inline-block;
+        position: absolute;
+        transform: rotate(90deg)
+    }
 }
