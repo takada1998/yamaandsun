@@ -15,10 +15,6 @@
             width: 55vw;
             bottom: 4%;
         }
-
-        @media screen and (max-width: 767px) {
-            width: 30vw;
-        }
     }
 
     &__aboutline {
@@ -32,28 +28,32 @@
         vertical-align: middle;
         display: inline-block;
 
-        @media screen and (max-width: 479px) {
-            width: 45vw;
-            top: -40px;
+        @media screen and (max-width: 991px) {
+            width: 27vw;
         }
+
 
         @media screen and (max-width: 767px) {
             width: 30vw;
             //top: -60px;
         }
 
-        @media screen and (max-width: 991px) {
-            width: 27vw;
+        @media screen and (max-width: 479px) {
+            width: 45vw;
+            top: -40px;
         }
+
+
     }
 
     &__musicline {
         width: 20vw;
         position: absolute;
-        top: 1400px;
+        top: -240px;
         bottom: auto;
         left: auto;
         right: 0%;
+
         max-width: 100%;
         vertical-align: middle;
         display: inline-block;
@@ -62,14 +62,14 @@
             width: 27vw;
         }
 
-        @media screen and (max-width: 479px) {
-            width: 55vw;
-            top: -10px;
-        }
-
         @media screen and (max-width: 767px) {
             width: 30vw;
-            top: 1200px;
+            top: 190px;
+        }
+
+        @media screen and (max-width: 479px) {
+            width: 55vw;
+            top: -190px;
         }
     }
 

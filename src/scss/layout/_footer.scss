@@ -4,12 +4,13 @@
 	display: block;
 	position: relative;
 	background-color: #fff36c;
-	padding: 47px 60px 35px;
+
 
 
 	&__wrap {
 		display: grid;
 		position: relative;
+		padding: 47px 60px 35px;
 
 		@media screen and (min-width: 1440px) {
 			max-width: 1500px;
@@ -35,6 +36,9 @@
 
 	&__inner {
 		grid-area: span 1 / span 1 / span 1 / span 1;
+		flex-direction: column;
+		margin-bottom: 15px;
+		display: flex;
 	}
 
 	&__SNS {
@@ -105,6 +109,13 @@
 	&__title {
 		margin-bottom: 30px;
 		width: 300px;
+
+		max-width: 100%;
+
+		img {
+			vertical-align: middle;
+			display: inline-block;
+		}
 	}
 }
 
